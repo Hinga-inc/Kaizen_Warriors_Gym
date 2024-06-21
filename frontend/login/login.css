@@ -23,7 +23,26 @@ body {
     margin: auto;
     padding: 20px;
 }
+.loginLogo {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 5px;
+}
 
+.loginLogo img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    padding: 20px;
+}
+
+.mission p {
+    font-size: 24px;
+    font-weight: bolder;
+    line-height: 32px;
+}
 .loginInputs {
     width: 100%;
     max-width: 600px;
@@ -46,9 +65,9 @@ body {
     width: 100%;
     height: 50px;
     padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #880aab;
-    border-radius: 5px;
+    margin: 15px 0; /* Changed from 10px to 15px to match signup */
+    border: 2px solid #880aab; /* Changed to 2px to match signup */
+    border-radius: 25px; /* Changed to 25px to match signup */
 }
 
 .loginInputs input[type="checkbox"] {
@@ -57,15 +76,16 @@ body {
 
 .loginInputs input[type="submit"] {
     width: 100%;
-    height: 50px;
+    height: 60px; /* Changed from 50px to 60px to match signup */
     margin-top: 20px;
     background: #880aab;
     color: #fff;
-    font-size: 18px;
+    font-size: 20px; /* Changed from 18px to 20px to match signup */
     font-weight: bold;
     border: none;
-    border-radius: 5px;
+    border-radius: 30px; /* Changed to 30px to match signup */
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
 .loginInputs input[type="submit"]:hover {
@@ -74,7 +94,7 @@ body {
 
 .loginInputs p {
     margin-top: 20px;
-    font-size: 16px;
+    font-size: 20px; /* Changed from 16px to 20px to match signup */
     font-weight: bold;
 }
 
@@ -85,31 +105,11 @@ a {
     font-weight: bold;
 }
 
-.loginLogo {
-    width: 100%;
-    max-width: 600px;
-    margin: 20px auto;
-    text-align: center;
-}
-
-.loginLogo img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    padding: 20px;
-}
-
-.mission p {
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 1.4;
-}
 .error-message {
     color: red;
     font-size: 14px;
     margin-top: 10px;
 }
-
 
 @media (max-width: 767px) {
     .loginInputs {
