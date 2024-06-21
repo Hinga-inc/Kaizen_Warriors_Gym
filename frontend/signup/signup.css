@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    height: 100vh;
+    padding: 20px;
+}
+
+.signupPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.signupLogo {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+.signupLogo img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    padding: 20px;
+}
+.mission p {
+    font-size: 24px;
+    font-weight: bolder;
+    line-height: 32px;
+}
+
+.signupInputs {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 22px;
+    border: 1px solid #880aab;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+}
+.signupInputs h2 {
+    font-size: 28px;
+    font-weight: bolder;
+    line-height: 36px;
+    margin-bottom: 15px;
+}
+
+.signupInputs input[type="text"],
+.signupInputs input[type="tel"],
+.signupInputs input[name="email"], 
+.signupInputs input[name="password"], 
+.signupInputs input[name="confirmPassword"] {
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin: 15px 0;
+    padding: 10px;
+    border: 2px solid #880aab;
+    border-radius: 25px;
+}
+
+.signupInputs input[name="confirmPassword"] {
+    margin-top: -20px;
+}
+
+
+.signupInputs [type="submit"]:hover {
+    background: #660066;
+}
+
+.signupInputs [type="submit"] {
+    width: 100%;
+    height: 60px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 30px;
+    background-color: #a223c5;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.signupInputs [for="agreetotnc"] {
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.signupInputs p {
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 10px 0;
+}
+
+/* Hide mission on smaller screens */
+@media (max-width: 767px) {
+    .mission {
+        display: none;
+    }
+    .signupLogo img {
+        margin-top: 30px;
+        max-width: 200px;
+        margin-bottom: 0px;
+    }
+    .signupInputs input[name="password"] {
+        margin-bottom: 0px;
+    }
+    .signupInputs input[name="confirmPassword"] {
+        margin-top: 0px;
+    }
+    .signupInputs input[type="text"],
+    .signupInputs input[type="tel"],
+    .signupInputs input[name="email"],
+    .signupInputs input[type="password"],
+    .signupInputs input[type="submit"] {
+        height: 40px; 
+    }
+    .signupInputs {
+        margin-top: -50px;
+        padding: 5px;
+    }
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+    .signupPage {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+    }
+    .signupLogo {
+        width: 45%;
+        height: auto;
+    }
+    .signupInputs {
+        width: 53%;
+    }
+    .signupInputs input[type="text"] {
+        width: calc(50% - 5px);
+        display: inline-block;
+    }
+}
+
+@media (min-width: 1200px) {
+    .signupPage {
+        width: 80%;
+    }
+    .signupLogo {
+        width: 40%;
+    }
+    .signupInputs {
+        width: 58%;
+    }
+}

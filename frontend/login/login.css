@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #eee;
+    padding: 20px;
+}
+
+.loginPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.loginInputs {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 22px;
+    border: 1px solid #880aab;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.loginInputs h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.loginInputs input[type="email"],
+.loginInputs input[type="password"] {
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #880aab;
+    border-radius: 5px;
+}
+
+.loginInputs input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.loginInputs input[type="submit"] {
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    background: #880aab;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.loginInputs input[type="submit"]:hover {
+    background: #660066;
+}
+
+.loginInputs p {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.loginInputs .highlight, 
+a {
+    color: #880aab;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.loginLogo {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.loginLogo img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    padding: 20px;
+}
+
+.mission p {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+@media (max-width: 767px) {
+    .loginInputs {
+        padding: 10px;
+    }
+
+    .loginInputs h2 {
+        font-size: 24px;
+    }
+
+    .loginInputs input[type="email"],
+    .loginInputs input[type="password"] {
+        height: 40px;
+        padding: 8px;
+        margin: 8px 0;
+    }
+
+    .loginInputs input[type="submit"] {
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .loginLogo img {
+        max-width: 200px;
+        padding: 10px;
+    }
+
+    .mission p {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .loginPage {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .loginLogo {
+        max-width: 45%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .loginPage {
+        width: 95%;
+    }
+
+    .loginLogo {
+        width: 40%;
+    }
+
+    .loginInputs {
+        width: 60%;
+    }
+}

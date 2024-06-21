@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+:root {
+  --containerbg: #ccc;
+  --buttonbg: #a151d6;
+  --maintextcolor: #ddd;
+  --higlightedtext:;
+  --btnhover:;
+  --anchortext: #931ce2;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: var(--anchortext);
+}
+li {
+  list-style-type: none;
+}
+
+/* the welcome nonstick container*/
+.welcomeContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+.welcomeAddress {
+  flex: 1;
+  text-align: left;
+  margin-left: 20px;
+}
+.welcomeCont {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  text-align: center;
+}
+.welcomeSocials {
+  flex: 1;
+  text-align: right;
+  padding: 0px 20px;
+}
+
+.logo-mission {
+  display: flex;
+  align-items: center;
+}
+.logo-mission p {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--maintextcolor);
+  line-height: 30px;
+}
+.logo-mission img {
+  max-width: 140px;
+  border-radius: 10px;
+}  
+.welcomeSocials a {
+  color: var(--maintextcolor);
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0 5px;
+  transition: color 0.3s ease;
+}
+.welcomeSocials i {
+  width: 40px;
+}
+.welcomeSocials a:hover {
+  color: #931ce2;
+}
+
+
+/* the navigation bar */
+header {
+  position: sticky;
+  top: 0;
+  background-color: #ffcc00;
+  padding: 10px;
+  border-radius: 5px;
+}
+.navlinks {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.leftnavlinks ul {
+  flex: 1;
+  align-items: left;
+}
+.rightnavlinks ul {
+  flex: 1;
+  align-items: right;
+  position: relative;
+}
+.leftnavlinks nav ul,
+.rightnavlinks nav ul {
+  display: flex;
+  padding: 20px;
+}
+.leftnavlinks nav ul {
+  margin-left: 50px;
+}
+.leftnavlinks a {
+  color: #222;
+  text-decoration: none;
+  padding: 0 40px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.rightnavlinks a.join-btn {
+  color: var(--maintextcolor);
+  font-size: 20px;
+  font-weight: 900;
+  background-color: var(--buttonbg);
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+
+/* the hero content */
+.hero-container {
+  position: relative;
+  width: 100%;
+}
+.hero-overlay, .button-container {
+  position: absolute;
+  z-index: 1;
+}
+.hero-overlay .highlight {
+  color:#931ce2;
+}
+
+.button-container a {
+  background-color: #a151d6;
+  padding: 10px 20px;
+  color: #000000;
+  border-radius: 10px;
+}
+.button-container a:hover {
+  background-color: #931ce2;
+}

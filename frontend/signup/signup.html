@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <title>Sign Up</title>
+</head>
+
+<body>
+    <main>
+        <div class="signupPage">
+            <div class="signupLogo">
+                <div class="logo">
+                    <a href="../index.html"><img src="images/KWGlogo.jpg" alt="gymlogo"></a>
+                </div>
+                <div class="mission">
+                    <p>Nothing to<br>Prove<br>Everything to<br>Improve</p>
+                </div>
+            </div>
+            <div class="signupInputs">
+                <h2>Sign Up</h2>
+                <form action="signup.php" id="signupForm" method="POST">
+                    <input type="text" name="firstname" placeholder="First Name" required>
+                    <input type="text" name="lastname" placeholder="Last Name" required>
+                    <input type="tel" name="mobileno" placeholder="Your Mobile no" pattern="\d{10,}"
+                    title="Must start with 07... or 01..." required>
+                    <input type="email" name="email" placeholder="Email"  id="email" required>
+                    <input type="password" name="password" id="password" placeholder="Password"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Must contain at least one number, one uppercase and lowercase letter, and at least 8 or more characters"
+                        required><br>
+                    <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password"
+                        required><br>
+                    <label for="agreetotnc">Agree To The <a href="">Gym Policy</a></label>
+                    <input type="checkbox" name="agreetotnc" id="agreetotnc" required>
+                    <input type="submit" value="Sign Up"><br>
+
+                    <p>Already have an account<br>
+                        <a href="../login/login.html"><span class="highlight">Log In</span></a>
+                    </p>
+                </form>
+                <p id="errorMessage" class="errorMessage"></p>
+            </div>
+        </div>
+    </main>
+    <script>
+        document.querySelector('form').addEventListener('submit', function (e) {
+            var password = document.getElementById('password').value;
+            var confirmPassword = document.getElementById('confirmPassword').value;
+
+            if (password !== confirmPassword) {
+                e.preventDefault();
+                alert('Passwords do not match');
+            }
+        });
+        document.addEventListener('DOMContentLoaded', () => {
+    const signupForm = document.getElementById('signupForm');
+    const emailInput = document.getElementById('email');
+    const passwordInput = document.getElementById('password');
+    const confirmPasswordInput = document.getElementById('confirmPassword');
+    const errorMessage = document.getElementById('errorMessage');
+
+    signupForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        errorMessage.textContent = 'Your request has been received';
+
+        const email = emailInput.value.trim();
+        const password = passwordInput.value.trim();
+        const confirmPassword = confirmPasswordInput.value.trim();
+
+        if (!validateEmail(email)) {
+            errorMessage.textContent = 'Please enter a valid email address.';
+            return;
+        }
+
+        if (password.length < 6) {
+            errorMessage.textContent = 'Password must be at least 6 characters long.';
+            return;
+        }
+
+        if (password !== confirmPassword) {
+            errorMessage.textContent = 'Passwords do not match.';
+            return;
+        }
+
+        signupForm.submit();
+    });
+
+    function validateEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(String(email).toLowerCase());
+    }
+});
+
+    </script>
+</body>
+
+</html>
