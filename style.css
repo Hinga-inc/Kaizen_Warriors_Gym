@@ -3,8 +3,6 @@
   --containerbg: #ccc;
   --buttonbg: #a151d6;
   --maintextcolor: #ddd;
-  --higlightedtext:;
-  --btnhover:;
   --anchortext: #931ce2;
 }
 * {
@@ -53,7 +51,6 @@ li {
   margin: 0;
   font-size: 24px;
   font-weight: 600;
-  color: ;
   line-height: 30px;
 }
 .logo-mission img {
@@ -61,7 +58,6 @@ li {
   border-radius: 10px;
 }  
 .welcomeSocials a {
-  color: ;
   text-decoration: none;
   font-size: 20px;
   margin: 0 5px;
@@ -82,6 +78,7 @@ header {
   background-color: #ffcc00;
   padding: 10px;
   border-radius: 5px;
+  z-index: 10;
 }
 .navlinks {
   max-width: 100%;
@@ -127,3 +124,13 @@ header {
 
 
 /* the hero content */
+.hero-container {
+  display: flex;
+  height: 100vh;
+  width: 95%;
+  margin: auto;
+  background-size: 90%;
+  background-position: center;
+  position: relative;
+}
+.hero-overlay

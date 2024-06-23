@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <meta
-    name="keyword"
-    content="Gym, nutrition, fitness center, Kaizen warriors gym, crossfit, bodybuilding, strongman, fitness, limuru"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta name="keyword"
+    content="Gym, nutrition, fitness center, Kaizen warriors gym, crossfit, bodybuilding, strongman, fitness, limuru" />
   <link rel="stylesheet" href="style.css" />
   <link rel="website icon" href="images/KWGlogo.jpg" alt="gymlogo" />
   <style>
@@ -18,6 +20,7 @@
   </style>
   <title>KAIZEN WARRIORS GYM</title>
 </head>
+
 <body>
   <div class="welcomeContainer">
     <div class="welcomeAddress">
@@ -43,7 +46,8 @@
       <a href="https://www.facebook.com/kaizenwarriorskenya/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
       <a href="https://www.instagram.com/kaizen_warriors_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
       <a href="mailto:kaizenfitness254@gmail.com"><i class="fa-regular fa-envelope"></i></a>
-      <a href="https://wa.me/254799063923?text= Hello%2C%20I%20would%20like%20to%20join%20your%20community" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="https://wa.me/254799063923?text= Hello%2C%20I%20would%20like%20to%20join%20your%20community"
+        target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
       <a href="https://www.tiktok.com/@kaizenwarriors254" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
     </div>
   </div>
@@ -71,29 +75,67 @@
             </li>
           </ul>
         </nav>
-    </div>
+      </div>
   </header>
 
   <main>
-    <div class="hero-container">
-      <img src="images/backbg.png" alt="Gym Background" class="background-image">
+    <div class="hero-container" id="hero-container">
       <div class="hero-overlay">
-        <h1>KAIZEN WARRIORS GYM</h1>
-        <p>SOME DAYS WE ARE <span class="highlight">WARRIORS</span>,<br>
-          SOME DAYS WE ARE A <span class="highlight">BROKEN MESS</span>,<br>
-          BUT MOST DAYS WE ARE A <span class="highlight">BIT OF BOTH</span>,<br>
-          FIGHTING, FAILING, STANDING, AND <br>
-          <span class="highlight">IMPROVING</span></p>
-        <div class="button-container">
-          <a href="#" class="button">VISIT US</a>
-          <a href="#" class="button">BE A MEMBER</a>
+        <div class="hero-text">
+          <h1>KAIZEN WARRIORS GYM</h1>
+          <p>SOME DAYS WE ARE <span class="highlight">WARRIORS</span>,<br>
+            SOME DAYS WE ARE A <span class="highlight">BROKEN MESS</span>,<br>
+            BUT MOST DAYS WE ARE A <span class="highlight">BIT OF BOTH</span>,<br>
+            FIGHTING, FAILING, STANDING, AND <br>
+            <span class="highlight">IMPROVING</span>
+          </p>
+        </div>
+        <div class="hero-button">
+          <div class="button-container">
+            <a href="#" class="button">VISIT US</a><br>
+            <a href="#" class="button">BE A MEMBER</a>
+          </div>
         </div>
       </div>
     </div>
 
-    
-  </main>
+    <script>
+      const images = [
+        'images/KWGlogo.jpg',
+        'images/image-2.jpg',
+        'images/image-3.jpg',
+        'images/image-4.jpg',
+        'images/image-5.jpg',
+        'images/image-6.jpg',
+        'images/image-7.jpg',
+        'images/image-8.jpg',
+        'images/image-9.jpg',
+        'images/image-10.jpg',
+        'images/image-11.jpg',
+        'images/image-12.jpg',
+        'images/image-13.jpg',
+        'images/image-14.png',
+        'images/image-15.jpg',
+        'images/image-16.jpg',
+        'images/image-17.jpg',
+        'images/image-18.jpg',
+        'images/image-19.jpg',
+        'images/image-20.jpg',
+        'images/image-21.jpg',
 
-  </main>
+      ];
+
+      let currentImageIndex = 0;
+      const heroContainer = document.getElementById('hero-container');
+
+      function backgroundChange() {
+        heroContainer.style.backgroundImage = `url(${images[currentImageIndex]})`;
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+      }
+
+      setInterval(backgroundChange, 5000);
+      backgroundChange();
+    </script>
 </body>
+
 </html>
