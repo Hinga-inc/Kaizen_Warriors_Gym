@@ -127,24 +127,3 @@ header {
 
 
 /* the hero content */
-.hero-container {
-  position: relative;
-  width: 100%;
-}
-.hero-overlay, .button-container {
-  position: absolute;
-  z-index: 1;
-}
-.hero-overlay .highlight {
-  color:#931ce2;
-}
-
-.button-container a {
-  background-color: #a151d6;
-  padding: 10px 20px;
-  color: #000000;
-  border-radius: 10px;
-}
-.button-container a:hover {
-  background-color: #931ce2;
-}

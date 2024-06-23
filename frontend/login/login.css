@@ -50,7 +50,7 @@ body {
     padding: 22px;
     border: 1px solid #880aab;
     border-radius: 5px;
-    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 .loginInputs h2 {
@@ -65,9 +65,9 @@ body {
     width: 100%;
     height: 50px;
     padding: 10px;
-    margin: 15px 0; /* Changed from 10px to 15px to match signup */
-    border: 2px solid #880aab; /* Changed to 2px to match signup */
-    border-radius: 25px; /* Changed to 25px to match signup */
+    margin: 15px 0;
+    border: 2px solid #880aab;
+    border-radius: 25px;
 }
 
 .loginInputs input[type="checkbox"] {
@@ -76,14 +76,14 @@ body {
 
 .loginInputs input[type="submit"] {
     width: 100%;
-    height: 60px; /* Changed from 50px to 60px to match signup */
+    height: 60px;
     margin-top: 20px;
     background: #880aab;
     color: #fff;
-    font-size: 20px; /* Changed from 18px to 20px to match signup */
+    font-size: 20px;
     font-weight: bold;
     border: none;
-    border-radius: 30px; /* Changed to 30px to match signup */
+    border-radius: 30px;
     cursor: pointer;
     margin-bottom: 20px;
 }
@@ -94,7 +94,7 @@ body {
 
 .loginInputs p {
     margin-top: 20px;
-    font-size: 20px; /* Changed from 16px to 20px to match signup */
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -113,6 +113,8 @@ a {
 
 @media (max-width: 767px) {
     .loginInputs {
+        border:  none;
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.05);
         padding: 10px;
     }
 

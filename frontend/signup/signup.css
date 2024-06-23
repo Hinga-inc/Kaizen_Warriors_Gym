@@ -72,6 +72,12 @@ body {
     border: 2px solid #880aab;
     border-radius: 25px;
 }
+.signupInputs input[type="tel"] {
+    margin-top: 0px;
+}
+.signupInputs input[name="password"] {
+    margin-bottom: -15px;
+}
 
 .signupInputs [type="submit"] {
     width: 100%;
@@ -106,6 +112,10 @@ body {
 @media (max-width: 767px) {
     .mission {
         display: none;
+    }
+    .signupInputs {
+        border:  none;
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.07);
     }
     .signupLogo img {
         margin-top: 30px;
