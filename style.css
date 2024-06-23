@@ -78,7 +78,7 @@ header {
   background-color: #ffcc00;
   padding: 10px;
   border-radius: 5px;
-  z-index: ;
+  z-index: 10;
 }
 .navlinks {
   max-width: 100%;
@@ -132,4 +132,58 @@ header {
   background-size: 90%;
   background-position: center;
   position: relative;
+}
+
+
+
+.hero-text {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  color: #fff;
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  transform: translate(-50%, -0%);
+  text-align: center;
+  padding: 20px;
+  max-width: 80%;
+}
+.hero-button {
+  position: absolute;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transform: translate(-50%, -0%);
+  top: 20%;
+  right: 0%;
+}
+
+.hero-overlay h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.hero-overlay p {
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+.highlight {
+  color: var(--anchortext);
+  font-weight: bold;
+}
+
+.button {
+  display: inline-block;
+  color: #fff;
+  background-color: #931ce2;
+  padding: 20px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+.button:hover {
+  background-color: #f0f0f0;
 }
