@@ -78,7 +78,7 @@ header {
   background-color: #ffcc00;
   padding: 10px;
   border-radius: 5px;
-  z-index: 10;
+  z-index: ;
 }
 .navlinks {
   max-width: 100%;
@@ -133,4 +133,3 @@ header {
   background-position: center;
   position: relative;
 }
-.hero-overlay
