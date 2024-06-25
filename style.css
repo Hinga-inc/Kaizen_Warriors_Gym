@@ -159,6 +159,16 @@ header {
   right: 0%;
 }
 
+.button {
+  display: inline-block;
+  color: #fff;
+  background-color: #931ce2;
+  padding: 20px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 20px;
+}
+
 .hero-overlay h1 {
   font-size: 4rem;
   margin-bottom: 10px;
@@ -172,16 +182,6 @@ header {
 .highlight {
   color: var(--anchortext);
   font-weight: bold;
-}
-
-.button {
-  display: inline-block;
-  color: #fff;
-  background-color: #931ce2;
-  padding: 20px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  margin: 20px;
 }
 
 .button:hover {
