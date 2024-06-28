@@ -69,6 +69,17 @@ li {
 .welcomeSocials a:hover {
   color: #931ce2;
 }
+@media screen and (max-width: 768px) {
+  .welcomeSocials {
+    display: none;
+  }
+  .welcomeAddress {
+    display: none;
+  }
+  .welcomeCont a {
+    display: none;
+  }
+}
 
 
 /* the navigation bar */
@@ -124,6 +135,8 @@ header {
 
 /*hamburger menu*/
 .hamburger-menu {
+  position: sticky;
+  top: 0;
   display: none;
   width: 30px;
   height: 20px;
@@ -210,8 +223,6 @@ header {
   background-position: center;
   position: relative;
 }
-
-
 
 .hero-text {
   background-color: rgba(0, 0, 0, 0.2);
