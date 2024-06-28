@@ -275,3 +275,8 @@ header {
 .button:hover {
   background-color: #4e067e;
 }
+@media screen and (max-width: 768px) {
+  .hero-text{
+    display: none;
+  }
+}
