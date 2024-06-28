@@ -1,9 +1,13 @@
-const menu =  document.querySelector('.menu');
-const menuOpener = document.querySelector('.menuOpener');
+// this is the event handler for the hamburger menu
 
-menuOpener.addEventListener('click', () => {
-    menuOpener.classList.toggle('active');
-    menu.classList.toggle('active');
+document.addEventListener('DOMContentLoaded', function() {
+  const hamburger = document.querySelector('.hamburger-menu');
+  const navlinks = document.querySelector('.navlinks');
+
+  hamburger.addEventListener('click', function() {
+    this.classList.toggle('open');
+    navlinks.classList.toggle('open');
+  });
 });
 
 // this is the image changer script
