@@ -279,4 +279,10 @@ header {
   .hero-text{
     display: none;
   }
+  #hero-container {
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 5px;
+  }
+
 }
