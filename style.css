@@ -107,19 +107,16 @@ header {
   position: relative;
 }
 .leftnavlinks nav ul,
-.rightnavlinks nav ul {
+.rightnavlinks a {
   display: flex;
-  padding: 20px;
-}
-.leftnavlinks nav ul {
-  margin-left: 50px;
+  padding: 15px;
 }
 .leftnavlinks a {
   color: #222;
   text-decoration: none;
   padding: 0 40px;
   font-weight: bold;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .rightnavlinks a.join-btn {
@@ -129,9 +126,13 @@ header {
   background-color: var(--buttonbg);
   padding: 10px 20px;
   border-radius: 5px;
-  margin-right: 40px;
+  margin-right: 20px;
   cursor: pointer;
 }
+.subnav {
+  display: none;
+}
+
 
 /*hamburger menu*/
 .hamburger-menu {
@@ -212,32 +213,12 @@ header {
     margin: 10px 0;
   }
 }
-main {
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-aside {
-  width: 15%;
-  background-color: #eee;
-  float: right;
-  height: 100vh;
-}
-aside h1 {
-  color: #222;
-  text-align: center;
-  margin-top: 20px;
-  border-bottom:2px solid #931ce2;
-}
-aside div {
-  height: 50%;
-}
 
 /* the hero content */
 .hero-container {
   display: flex;
   height: 100vh;
-  width: 88%;
+  width: 95%;
   margin-right: auto;
   margin: auto;
   background-size: 90%;
@@ -279,7 +260,7 @@ aside div {
 }
 
 .hero-overlay h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   margin-bottom: 10px;
 }
 
@@ -306,4 +287,44 @@ aside div {
     margin-top: 5px;
   }
 
+}
+/* Section Styles */
+section {
+  padding: 60px 20px;
+}
+
+#about-us {
+  background-color: #f9f9f9;
+}
+
+#programs {
+  background-color: #fff;
+}
+
+#membership {
+  background-color: #f9f9f9;
+}
+
+#trainers {
+  background-color: #fff;
+}
+
+#testimonials {
+  background-color: #f9f9f9;
+}
+
+#blogs {
+  background-color: #fff;
+}
+
+#contact-us {
+  background-color: #f9f9f9;
+}
+
+#feedback-form {
+  background-color: #fff;
+}
+
+#subscribe-to-newsletter {
+  background-color: #f9f9f9;
 }

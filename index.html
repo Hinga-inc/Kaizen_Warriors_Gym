@@ -51,76 +51,115 @@
       <div class="leftnavlinks">
         <nav>
           <ul>
-            <li><a href="#">About&nbsp;Us</a></li>
-            <li><a href="#">Programs</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact&nbsp;Us</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-us">About&nbsp;Us</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#membership">Membership</a></li>
+            <li><a href="#trainers">Trainers</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#blogs">Blogs</a></li>
+            <li><a href="#contact-us">Contact&nbsp;Us</a></li>
           </ul>
         </nav>
       </div>
       <div class="rightnavlinks">
-        <nav>
-          <ul>
-            <li><a class="join-btn">Join&nbsp;Us</a>
-              <!--<ul class="subnav">
-                <li><a href="frontend/signup/signup.html">Sign&nbsp;UP</a></li>
-                <li><a href="frontend/login/login.html">Log&nbsp;In</a></li>
-              </ul>-->
-            </li>
-          </ul>
-        </nav>
+        <a class="join-btn">Join&nbsp;Us</a>
+        <ul class="subnav">
+          <li><a href="frontend/signup/signup.html">Sign&nbsp;UP</a></li><br>
+          <li><a href="frontend/login/login.html">Log&nbsp;In</a></li>
+        </ul>
       </div>
       <div class="hamburger-menu">
         <span></span>
         <span></span>
         <span></span>
         <span></span>
-        <style>
-
-        </style>
       </div>
+    </div>
   </header>
 
   <main>
-    <aside>
-      <div class="aside-container">
-        <div class="wod-container">
-          <h1>WOD</h1>
-          <div class="wod-update">
-            <!--this container has an update content from the managements work out of the day-->
+    <section id="home">
+      <div class="hero-container" id="hero-container">
+        <div class="hero-overlay">
+          <div class="hero-text">
+            <h1>KAIZEN WARRIORS GYM</h1>
+            <p>SOME DAYS WE ARE <span class="highlight">WARRIORS</span>,<br>
+              SOME DAYS WE ARE A <span class="highlight">BROKEN MESS</span>,<br>
+              BUT MOST DAYS WE ARE A <span class="highlight">BIT OF BOTH</span>,<br>
+              FIGHTING, FAILING, STANDING, AND <br>
+              <span class="highlight">IMPROVING</span>
+            </p>
+          </div>
+          <div class="hero-button">
+            <div class="button-container">
+              <a href="#" class="button">VISIT US</a><br>
+              <a href="frontend/signup/signup.html" class="button">BE A MEMBER</a>
+            </div>
           </div>
         </div>
-        <div class="event-container">
-          <h1>EVENTS</h1>
-          <div class="event-update">
-            <!--thuis conatains the updated content of the events that are comming-->
-            <div class="event-image"></div>
-            <div class="event-text"></div>
-          </div>
+      </div>
+    </section>
+    <section id="about-us">
 
+    </section>
+
+    <section id="programs">
+
+    </section>
+
+    <section id="membership">
+
+    </section>
+
+    <section id="trainers">
+
+    </section>
+
+    <section id="testimonials">
+
+    </section>
+
+    <section id="blogs">
+
+    </section>
+
+    <section id="contact-us">
+      <div class="contact-container">
+        <h2>We Would Like To Fear From You</h2>
+        <div class="contact-form">
+          <form action="" id="contact-form">
+            <input type="text" name="contact-name" id="nameinput" placeholder="Name" required><br>
+            <input type="text" name="contact-email" id="emailinput" placeholder="Email" required><br>
+            <input type="text" name="contact-subject" id="subjectinput" placeholder="Subject" required><br>
+            <textarea name="contact-message" id="messageinput" placeholder="Message" required></textarea>
+            <input type="submit" value="Send" id="send-message">
+          </form>        
+        </div>
+        <div class="contact-desk-image">
+          <img src="" alt="Contact desk image">
         </div>
       </div>
-    </aside>
-    <div class="hero-container" id="hero-container">
-      <div class="hero-overlay">
-        <div class="hero-text">
-          <h1>KAIZEN WARRIORS GYM</h1>
-          <p>SOME DAYS WE ARE <span class="highlight">WARRIORS</span>,<br>
-            SOME DAYS WE ARE A <span class="highlight">BROKEN MESS</span>,<br>
-            BUT MOST DAYS WE ARE A <span class="highlight">BIT OF BOTH</span>,<br>
-            FIGHTING, FAILING, STANDING, AND <br>
-            <span class="highlight">IMPROVING</span>
-          </p>
+
+
+      <div class="newsletter-container">
+        <h2>Subscribe to our Newsletter</h2>
+        <p>Stay in the swing With the Kaizen Fitness latest News and Updates</p>
+        <div class="newsletter-form">
+          <form action="" id="newsletter-form">
+            <input type="text" name="newsletter-email" id="email-input" placeholder="Your email" required>
+            <input type="submit" value="Subscribe" id="subscribe-to-newsletter">
+          </form>
         </div>
-        <div class="hero-button">
-          <div class="button-container">
-            <a href="#" class="button">VISIT US</a><br>
-            <a href="frontend/signup/signup.html" class="button">BE A MEMBER</a>
-          </div>
+        <div class="newsletter-images">
+          
         </div>
       </div>
-    </div>
-    <script src="script.js"></script>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
